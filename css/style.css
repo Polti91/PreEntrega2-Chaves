@@ -17,7 +17,11 @@
 }
 
 body {
-  background: linear-gradient(0.25turn, #3f87a6, #8d8f8c, #f69d3c);
+  background: linear-gradient(0.25turn, #fce3e3, #c7c7c7, #9b9b9b);
+}
+
+.padding {
+  padding: 2%;
 }
 
 footer {
@@ -43,6 +47,7 @@ footer {
 h1 {
   text-align: center;
   margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 section.margin h2 {
@@ -108,7 +113,6 @@ div.flex label {
 .centrado {
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 40px;
 }
 
 .flex {
