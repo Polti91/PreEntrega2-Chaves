@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-header {
+.header {
   background: linear-gradient(0.25turn, #2c9e0f, #71c4e6, #18ad38);
   justify-content: space-between;
   align-items: center;
@@ -14,10 +14,6 @@ header {
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-header div {
-  margin-top: 3px;
 }
 
 body {
