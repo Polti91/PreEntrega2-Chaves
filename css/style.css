@@ -134,6 +134,10 @@ div.flex label {
   justify-content: center;
 }
 
+.ancho {
+  width: 100%;
+}
+
 .card {
   display: flex;
   justify-content: space-around;
