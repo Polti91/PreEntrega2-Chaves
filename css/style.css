@@ -60,6 +60,10 @@ h2 {
   margin: 10px 0 10px 0;
 }
 
+.margh2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .req__h2 {
   text-align: center;
   font-style: italic;
@@ -161,8 +165,8 @@ div.flex label {
 }
 
 .video {
-  width: 700px;
-  height: 380px;
+  width: 100%;
+  height: 100%;
   border: 1px;
   border-style: solid;
 }
