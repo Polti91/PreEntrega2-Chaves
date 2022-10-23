@@ -11,6 +11,10 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -18,9 +22,17 @@
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
-            <img src="../assets/img/logotr.png" alt="logo">
+            <img src="../assets/img/logotr.png" alt="logo" />
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -29,7 +41,12 @@
                 <a class="nav-link" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./integraciones.html">Integraciones</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./integraciones.html"
+                  >Integraciones</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./requisitos.html">Requisitos</a>
@@ -46,7 +63,7 @@
       </nav>
     </header>
     <main>
-      <h1>Nuestras integraciones con distintas plataformas</h1>
+      <h1 class="wow fadeIn">Nuestras integraciones con distintas plataformas</h1>
       <section class="margin">
         <h2>Pedidos Ya</h2>
         <div class="flex sectionInt">
@@ -90,5 +107,9 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
