@@ -5,13 +5,6 @@
   box-sizing: border-box;
 }
 
-.header {
-  background: linear-gradient(0.25turn, #2c9e0f, #71c4e6, #18ad38);
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -28,20 +21,6 @@ footer section {
   position: fixed;
   bottom: 0px;
   right: 0px;
-}
-
-.sectionReq {
-  justify-content: space-around;
-}
-
-.sectionInt {
-  align-items: center;
-  justify-content: center;
-}
-
-.margin {
-  margin-top: 10px;
-  margin-bottom: 80px;
 }
 
 h1 {
@@ -88,33 +67,6 @@ h3 {
   border-radius: 3px;
 }
 
-.cajareq {
-  border: solid;
-  padding: 15px;
-  margin: 25px 10px 10px 10px;
-  border-radius: 6px;
-  width: 400px;
-  height: 450px;
-}
-
-.cajareq p {
-  font-size: large;
-  margin-bottom: 5px;
-}
-
-.cajachica {
-  height: 255px;
-  border: solid;
-  padding: 5px;
-  margin: 10px;
-  border-radius: 6px;
-}
-
-div.flex label {
-  display: block;
-  margin: 6px 0 6px 0;
-}
-
 .centrado {
   justify-content: space-evenly;
   align-items: center;
@@ -124,33 +76,13 @@ div.flex label {
   display: flex;
 }
 
-.center {
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.section__tam {
-  width: 70%;
-  justify-content: center;
+div.flex label {
+  display: block;
+  margin: 6px 0 6px 0;
 }
 
 .ancho {
   width: 100%;
-}
-
-.card {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.card__div2 {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 
 .card__div {
@@ -173,10 +105,6 @@ div.flex label {
   height: 100%;
   border: 1px;
   border-style: solid;
-}
-
-ul {
-  list-style-type: none;
 }
 
 div.flex input {
@@ -207,6 +135,10 @@ div.flex div {
 
 form {
   width: 500px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 ul li {
