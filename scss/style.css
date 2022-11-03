@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/*Tamaño de letra del nav*/
+/*Colores del gradient en el background del main*/
+/*Mapa de colores para redes*/
+* {
+  padding: 0px;
+  border-left: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  padding: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: large;
+  border-style: none;
+  margin-right: 45px;
+  text-transform: uppercase;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  background: linear-gradient(0.25turn, #fce3e3, #c7c7c7, #9b9b9b);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+.padding {
+  padding: 2%;
+}
+
+section.margin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.margh2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.req__h2 {
+  text-align: center;
+  font-style: italic;
+  font-size: xx-large;
+  margin-bottom: 50px;
+}
+
+.h3sub {
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.centrado {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ancho {
+  width: 100%;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  border: 1px;
+  border-style: solid;
+}
+
+.card__div {
+  width: 50%;
+}
+.card__img {
+  width: 200px;
+  height: 200px;
+}
+
+footer section {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+footer .btn--whatsapp:hover {
+  transform: scale(1.1);
+  background-color: #57C005;
+  border-radius: 35%;
+  opacity: 70%;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+footer .btn--linkedin:hover {
+  transform: scale(1.1);
+  background-color: #048FEA;
+  border-radius: 35%;
+  opacity: 70%;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+footer .btn--instagram:hover {
+  transform: scale(1.1);
+  background-color: #e619b3;
+  border-radius: 35%;
+  opacity: 70%;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+form {
+  width: 500px;
+}
+form textarea {
+  width: 100%;
+  border-radius: 6px;
+}
+
+div.flex label {
+  display: block;
+  margin: 6px 0 6px 0;
+}
+div.flex input {
+  width: 100%;
+  height: 30px;
+  border: 1px;
+  border-radius: 6px;
+}
+div.flex div {
+  display: flex;
+  justify-content: center;
+}
+div.flex div input.button {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background-color: rgb(255, 0, 0);
+  margin: 0px;
+  border-radius: 6px;
+}
+
+.caja {
+  border: solid;
+  border-width: 1.5px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexc {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}/*# sourceMappingURL=style.css.map */
