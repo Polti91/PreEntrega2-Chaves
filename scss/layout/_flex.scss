@@ -1,11 +1,9 @@
 .flex {
-    display: flex;
-  }
-  
-  
-  
-  .flexc {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-  }
+  display: flex;
+}
+
+.flexc {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}

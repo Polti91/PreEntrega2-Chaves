@@ -1,7 +1,8 @@
 @charset "UTF-8";
-/*Tamaño de letra del nav*/
+/*Variables*/ /*Tamaño de letra del nav*/
 /*Colores del gradient en el background del main*/
 /*Mapa de colores para redes*/
+/*Valores por defecto que afectan toda la web*/
 * {
   padding: 0px;
   border-left: 0px;
@@ -9,10 +10,12 @@
   box-sizing: border-box;
 }
 
+/* Quitamos la scroll bar para evitar variaciones de tamaño en páginas largas*/
 ::-webkit-scrollbar {
   display: none;
 }
 
+/* Todo lo referente a la barra de navegación*/
 ul {
   list-style-type: none;
 }
@@ -29,6 +32,7 @@ ul li a {
   color: rgb(255, 255, 255);
 }
 
+/*Background y estilos generales*/
 body {
   background: linear-gradient(0.25turn, #fce3e3, #c7c7c7, #9b9b9b);
 }
@@ -98,6 +102,7 @@ section.margin {
   height: 200px;
 }
 
+  /*Redes sociales en el footer*/
 footer section {
   position: fixed;
   bottom: 0px;
@@ -105,7 +110,7 @@ footer section {
 }
 footer .btn--whatsapp:hover {
   transform: scale(1.1);
-  background-color: #57C005;
+  background-color: #57c005;
   border-radius: 35%;
   opacity: 70%;
   margin-bottom: 5px;
@@ -113,7 +118,7 @@ footer .btn--whatsapp:hover {
 }
 footer .btn--linkedin:hover {
   transform: scale(1.1);
-  background-color: #048FEA;
+  background-color: #048fea;
   border-radius: 35%;
   opacity: 70%;
   margin-bottom: 5px;
@@ -128,6 +133,7 @@ footer .btn--instagram:hover {
   margin-right: 5px;
 }
 
+/*Formulario de contacto*/
 form {
   width: 500px;
 }
@@ -175,4 +181,4 @@ div.flex div input.button {
   display: flex;
   flex-direction: column;
   align-self: center;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,15 @@
+/*Variables*/
 @import "utilities/variables";
+/*Valores por defecto que afectan toda la web*/
 @import "reset/reset";
+/* Todo lo referente a la barra de navegación*/
 @import "components/nav";
+/*Background y estilos generales*/
 @import "components/body";
 @import "components/card";
+/*Redes sociales en el footer*/
 @import "components/footer";
+/*Formulario de contacto*/
 @import "components/form";
 @import "components/div";
 @import "layout/flex";

@@ -4,7 +4,7 @@ footer {
     bottom: 0px;
     right: 0px;
   }
-
+  /*Redes sociales en el footer*/
   @each $red, $color in $redes {
     .btn--#{$red}:hover {
       transform: scale(1.1);
@@ -13,8 +13,6 @@ footer {
       opacity: 70%;
       margin-bottom: 5px;
       margin-right: 5px;
-  }
+    }
   }
 }
-
-

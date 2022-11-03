@@ -1,10 +1,10 @@
 * {
-    padding: 0px;
-    border-left: 0px;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  ::-webkit-scrollbar {
-    display: none;
-  }
+  padding: 0px;
+  border-left: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Quitamos la scroll bar para evitar variaciones de tamaño en páginas largas*/
+::-webkit-scrollbar {
+  display: none;
+}
