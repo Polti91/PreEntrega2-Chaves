@@ -37,8 +37,12 @@ body {
   background: linear-gradient(0.25turn, #fce3e3, #c7c7c7, #9b9b9b);
 }
 
-h1 {
+.texto-centrado, .texto-centrado--marg, .texto-centrado--h1 {
   text-align: center;
+}
+
+/* Uso de extend */
+.texto-centrado--h1 {
   margin-top: 70px;
   margin-bottom: 70px;
 }
@@ -46,10 +50,6 @@ h1 {
 h2 {
   text-align: center;
   margin: 10px 0 10px 0;
-}
-
-h3 {
-  text-align: center;
 }
 
 .padding {
@@ -73,7 +73,7 @@ section.margin {
   margin-bottom: 50px;
 }
 
-.h3sub {
+.texto-centrado--marg {
   margin-bottom: 10px;
   text-decoration: underline;
 }
@@ -95,14 +95,18 @@ section.margin {
 }
 
 .card__div {
-  width: 50%;
+  width: 70%;
 }
 .card__img {
   width: 200px;
   height: 200px;
 }
 
+/*Redes sociales en el footer*/
+footer {
+  width: 100%;
   /*Redes sociales en el footer*/
+}
 footer section {
   position: fixed;
   bottom: 0px;
@@ -110,7 +114,7 @@ footer section {
 }
 footer .btn--whatsapp:hover {
   transform: scale(1.1);
-  background-color: #57c005;
+  background-color: #57C005;
   border-radius: 35%;
   opacity: 70%;
   margin-bottom: 5px;
@@ -118,7 +122,7 @@ footer .btn--whatsapp:hover {
 }
 footer .btn--linkedin:hover {
   transform: scale(1.1);
-  background-color: #048fea;
+  background-color: #048FEA;
   border-radius: 35%;
   opacity: 70%;
   margin-bottom: 5px;
@@ -181,4 +185,13 @@ div.flex div input.button {
   display: flex;
   flex-direction: column;
   align-self: center;
-} /*# sourceMappingURL=style.css.map */
+}
+
+@media (max-width: 600px) {
+  .card__div {
+    width: 90%;
+  }
+  .flexc {
+    padding: 2px;
+  }
+}/*# sourceMappingURL=style.css.map */
