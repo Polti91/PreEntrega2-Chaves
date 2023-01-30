@@ -196,6 +196,7 @@ traerPresupuesto(arrayPresupuestos[historial.selectedIndex-1])
 let reset = document.getElementById("resetear");
 reset.addEventListener("click", ()=>{
   localStorage.clear()
+  location. reload()
 })
 
 
