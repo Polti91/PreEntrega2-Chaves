@@ -28,9 +28,34 @@ div {
 }
 
 .caja {
-    border: solid;
-    border-width: 1.5px;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 3px;
+  border: solid;
+  border-width: 1.5px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+div {
+  .presupuestox {
+    p {
+      margin: 5px;
+    }
   }
+  .otro {
+    p {
+      margin-bottom: 5px;
+    }
+    input {
+      margin-bottom: 10px;
+      
+    }
+    select {
+      margin-bottom: 10px;
+     
+    }
+  }
+}
+
+.alto {
+  margin-bottom: 15px;
+}

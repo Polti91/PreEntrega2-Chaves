@@ -73,6 +73,14 @@ section.margin {
   margin-bottom: 50px;
 }
 
+.h2presupuesto {
+  text-align: center;
+  font-style: italic;
+  font-size: xx-large;
+  margin-bottom: 20px;
+  margin-top: 24px;
+}
+
 .texto-centrado--marg {
   margin-bottom: 10px;
   text-decoration: underline;
@@ -92,6 +100,25 @@ section.margin {
   height: 100%;
   border: 1px;
   border-style: solid;
+}
+
+.input2 {
+  background-color: black;
+}
+
+.titular {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.h2marg {
+  margin-bottom: 42px;
+}
+
+.espaciado {
+  display: flex;
+  justify-content: space-between;
 }
 
 .card__div {
@@ -114,7 +141,7 @@ footer section {
 }
 footer .btn--whatsapp:hover {
   transform: scale(1.1);
-  background-color: #57C005;
+  background-color: #57c005;
   border-radius: 35%;
   opacity: 70%;
   margin-bottom: 5px;
@@ -122,7 +149,7 @@ footer .btn--whatsapp:hover {
 }
 footer .btn--linkedin:hover {
   transform: scale(1.1);
-  background-color: #048FEA;
+  background-color: #048fea;
   border-radius: 35%;
   opacity: 70%;
   margin-bottom: 5px;
@@ -144,6 +171,22 @@ form {
 form textarea {
   width: 100%;
   border-radius: 6px;
+}
+
+#calcular {
+  width: 100%;
+}
+
+#eliminar {
+  width: 30%;
+}
+
+#ver {
+  width: 30%;
+}
+
+#listar {
+  width: 30%;
 }
 
 div.flex label {
@@ -175,6 +218,23 @@ div.flex div input.button {
   padding: 5px;
   margin: 10px;
   border-radius: 3px;
+}
+
+div .presupuestox p {
+  margin: 5px;
+}
+div .otro p {
+  margin-bottom: 5px;
+}
+div .otro input {
+  margin-bottom: 10px;
+}
+div .otro select {
+  margin-bottom: 10px;
+}
+
+.alto {
+  margin-bottom: 15px;
 }
 
 .flex {

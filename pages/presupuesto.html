@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Requerimientos de nuestros sistemas de gestión"
+    />
+    <meta
+      name="keywords"
+      content="Software, Gastronómico, Ventas, Gestión, Facturación, Requisitos, Mínimos, Ideales"
+    />
+    <title>Requisitos</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="../scss/style.css" />
+  </head>
+  <body>
+    <header>
+      <!--Barra de navegación de Bootstrap-->
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/img/logotr.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./integraciones.html"
+                  >Integraciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./requisitos.html">Requisitos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./empresa.html">Empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./presupuesto.html"
+                  >Presupuesto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="wow fadeIn titular">Simulá tu presupuesto</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-6 centrado">
+            <h2 class="req__h2">Ingresá tus datos</h2>
+            <div class="caja otro">
+              <p>Nombre:</p>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Pablo Chaves"
+                aria-label="default input example"
+                id="nombre"
+              />
+              <p>Sistema:</p>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="sistema"
+              >
+                <option value="NG">NG</option>
+                <option value="G1">G1</option>
+              </select>
+              <p>Módulo de tablets:</p>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="tablets"
+              >
+                <option value="0">Si</option>
+                <option value="1">No</option>
+              </select>
+              <p>Módulo de integraciones:</p>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="integracion"
+              >
+                <option value="0">Si</option>
+                <option value="1">No</option>
+              </select>
+              <p>Cantidad de PC adicionales:</p>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="pcAd"
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+              <p>Meses de abono:</p>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="mesAbono"
+              >
+                <option value="0">3 Meses</option>
+                <option value="1">6 Meses</option>
+                <option value="2">9 Meses</option>
+                <option value="3">12 meses</option>
+              </select>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm"
+                id="calcular"
+              >
+                Calcular presupuesto
+              </button>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6 centrado">
+            <div>
+              <h2 class="req__h2">Presupuesto</h2>
+              <div class="caja presupuestox" id="divPresupuesto">
+                <p>Presupuesto n°:</p>
+                <p>Nombre:</p>
+                <p>Sistema:</p>
+                <p>Tablets:</p>
+                <p>Integración:</p>
+                <p>PC adicionales:</p>
+                <p>Meses de abono:</p>
+                <p>Subtotal:</p>
+                <p>Total:</p>
+              </div>
+              <h2 class="h2marg">Historial de presupuestos</h2>
+              <div class="caja">
+                <p>Presupuestos realizados:</p>
+                <select
+                  class="form-select alto"
+                  aria-label="Default select example"
+                  id="historialPresupuestos"
+                >
+                  <option value="0">Seleccionar...</option>
+                </select>
+                <div class="flex espaciado">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    id="listar"
+                  >
+                    Listar</button
+                  ><button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    id="ver"
+                  >
+                    Ver
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    id="eliminar"
+                  >
+                    Eliminar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!--Redes Sociales-->
+      <section>
+        <a
+          href="https://api.whatsapp.com/send?phone=5491132777917"
+          target="_blank"
+          ><img
+            src="../assets/img/whatsapp.png"
+            alt="WhatsApp"
+            class="btn--whatsapp"
+        /></a>
+        <a
+          href="https://www.linkedin.com/company/n%C3%BAcleo-it/"
+          target="_blank"
+          ><img
+            src="../assets/img/linkedin.png"
+            alt="LinkedIn"
+            class="btn--linkedin"
+        /></a>
+        <a href="https://www.instagram.com/nucleoit/" target="_blank"
+          ><img
+            src="../assets/img/instagram.png"
+            alt="Instagram"
+            class="btn--instagram"
+        /></a>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/javascript.js"></script>
+  </body>
+</html>

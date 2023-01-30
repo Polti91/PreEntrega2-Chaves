@@ -18,8 +18,6 @@ h2 {
   margin: 10px 0 10px 0;
 }
 
-
-
 .padding {
   padding: 2%;
 }
@@ -43,6 +41,14 @@ section {
   margin-bottom: 50px;
 }
 
+.h2presupuesto {
+  text-align: center;
+  font-style: italic;
+  font-size: xx-large;
+  margin-bottom: 20px;
+  margin-top: 24px;
+}
+
 .texto-centrado--marg {
   @extend .texto-centrado;
   margin-bottom: 10px;
@@ -63,4 +69,23 @@ section {
   height: 100%;
   border: 1px;
   border-style: solid;
+}
+
+.input2 {
+  background-color: black;
+}
+
+.titular {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.h2marg {
+  margin-bottom: 42px;
+}
+
+.espaciado {
+  display: flex;
+  justify-content: space-between;
 }
