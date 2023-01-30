@@ -93,9 +93,14 @@ calcular.addEventListener("click", () => {
 
 
 
+
 function calcularPresupuesto() {
   //Establecemos el número del presupuesto
+  if (localStorage.getItem("numeroPresupuesto")){
+    presupuestoNro = parseInt(localStorage.getItem("numeroPresupuesto"));
+  }
   presupuestoNro = presupuestoNro + 1;
+  localStorage.setItem("numeroPresupuesto", presupuestoNro)
   //tomamos valores de los input
   nombre = document.getElementById("nombre");
   pcAdicional = document.getElementById("pcAd");
@@ -175,7 +180,7 @@ let eliminar = document.getElementById("eliminar");
 eliminar.addEventListener("click", ()=>{
   console.log(arrayPresupuestos)
   console.log(historial.selectedIndex-1)
-  eliminarPresupuesto(arrayPresupuestos[historial.selectedIndex-1], 1)
+  eliminarPresupuesto(historial.selectedIndex-1, 1)
   console.log(arrayPresupuestos)
   mostrarHistorial(arrayPresupuestos)
 })
@@ -187,6 +192,11 @@ ver.addEventListener("click", ()=>{
 traerPresupuesto(arrayPresupuestos[historial.selectedIndex-1])
 })
 
+//capturamos boton restear para borrar todo
+let reset = document.getElementById("resetear");
+reset.addEventListener("click", ()=>{
+  localStorage.clear()
+})
 
 
 //mostramos el historial de presupuestos
@@ -195,12 +205,13 @@ listar.addEventListener("click", ()=>{
   if (localStorage.getItem("presupuestos")){
     arrayPresupuestos = JSON.parse(localStorage.getItem("presupuestos"));
   }
-   //reseteamos para que no duplique
-  historial.innerHTML = `<option value="0">Seleccionar...</option>`
+   
   mostrarHistorial(arrayPresupuestos)
 })
 
 function mostrarHistorial(arrayx) {
+  //reseteamos para que no duplique
+  historial.innerHTML = `<option value="0">Seleccionar...</option>`
   for (const histo of arrayx) {
     let presuhistorial = document.createElement("option");
     presuhistorial.innerHTML += `<option value="${histo.numero}">Presupuesto n°${histo.numero} - Nombre: ${histo.nombre}</option>`;

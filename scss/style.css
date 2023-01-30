@@ -118,7 +118,7 @@ section.margin {
 
 .espaciado {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .card__div {
@@ -174,7 +174,11 @@ form textarea {
 }
 
 #calcular {
-  width: 100%;
+  width: 40%;
+}
+
+#resetear {
+  width: 40%;
 }
 
 #eliminar {
