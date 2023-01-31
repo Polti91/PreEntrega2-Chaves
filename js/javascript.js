@@ -109,17 +109,21 @@ function calcularPresupuesto() {
   tablets = document.getElementById("tablets");
   integracion = document.getElementById("integracion");
   //revisamos si hay modulo de tablets e integración. Si no hay, guarda el valor 0 en el precio de cada una
-  if (tablets.value == "1") {
-    valorDeTablet = 0;
-  } else {
-    valorDeTablet = sistemaNg.precioTablets;
-  }
+  tablets.value == "1" ? valorDeTablet = 0 : valorDeTablet = sistemaNg.precioTablets;
+  // if (tablets.value == "1") {
+  //   valorDeTablet = 0;
+  // } else {
+  //   valorDeTablet = sistemaNg.precioTablets;
+  // }
+  
+  integracion.value == "1" ? valorDeIntegracion = 0 : valorDeIntegracion = sistemaNg.precioIntegracion;
+  // if (integracion.value == "1") {
+  //   valorDeIntegracion = 0;
+  // } else {
+  //   valorDeIntegracion = sistemaNg.precioIntegracion;
+  // }
 
-  if (integracion.value == "1") {
-    valorDeIntegracion = 0;
-  } else {
-    valorDeIntegracion = sistemaNg.precioIntegracion;
-  }
+  
   //revisamos que hayamos puesto un nombre
   if (nombre.value == "") {
     Swal.fire({
