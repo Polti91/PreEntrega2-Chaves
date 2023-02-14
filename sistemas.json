@@ -1,0 +1,22 @@
+[
+  {
+    "sistema": "NG",
+    "precio": 20000,
+    "tablets": true,
+    "precioTablets": 5000,
+    "integracion": true,
+    "precioIntegracion": 5000,
+    "mensualidad": 3000,
+    "pcAdicional": 2000
+  },
+  {
+    "sistema": "G1",
+    "precio": 15000,
+    "tablets": "No disponible",
+    "precioTablets": 0,
+    "integracion": "No disponible",
+    "precioIntegracion": 0,
+    "mensualidad": 3000,
+    "pcAdicional": 1800
+  }
+]
