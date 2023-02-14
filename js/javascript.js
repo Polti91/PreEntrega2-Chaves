@@ -228,7 +228,7 @@ function mostrarHistorial(arrayx) {
   historial.innerHTML = `<option value="0">Seleccionar...</option>`;
   for (const histo of arrayx) {
     let presuhistorial = document.createElement("option");
-    presuhistorial.innerHTML += `<option value="${histo.numero}">Presupuesto n°${histo.numero} - Nombre: ${histo.nombre}</option>`;
+    presuhistorial.innerHTML += `<option value="${histo.numero}">Presupuesto n°${histo.numero} - Nombre: ${histo.nombre} - Sistema: ${histo.sistema}</option>`;
     historial.appendChild(presuhistorial);
   }
 }
