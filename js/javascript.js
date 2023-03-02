@@ -198,13 +198,38 @@ function calcularPresupuesto() {
 
 //Evento para borrar presupuesto
 eliminar.addEventListener("click", () => {
+  if (historial.selectedIndex > 0){
   eliminarPresupuesto(historial.selectedIndex - 1, 1);
   mostrarHistorial(arrayPresupuestos);
+} else {
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Debe seleccionar un presupuesto",
+  })
+}
+  
 });
 
 //Evento para mostrar presupuesto
 ver.addEventListener("click", () => {
-  traerPresupuesto(arrayPresupuestos[historial.selectedIndex - 1]);
+  if (arrayPresupuestos.length > 0){
+    if (historial.selectedIndex > 0){
+      traerPresupuesto(arrayPresupuestos[historial.selectedIndex - 1]);
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Debe seleccionar un presupuesto",
+      })
+    }
+  } else {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "No hay presupuestos generados.",
+    })
+  }
 });
 
 //Evento para resetear todo
